@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="gameclient.vba-next"
+<addon id="game.libretro.vba-next"
 		name="VBA-Next"
 		version="1.0.4"
 		provider-name="Libretro">
 	<requires>
-		<import addon="xbmc.libretro" version="1.0.0"/>
+		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gameclient"
-			library_android=""
-			library_linux="vba_next_libretro.so"
-			library_osx=""
-			library_windx=""
-			library_wingl="">
+	<extension point="kodi.gameclient"
+                   library_android="libgame.libretro.vba-next.so"
+                   library_linux="game.libretro.vba-next.so"
+                   library_osx="game.libretro.vba-next.dylib"
+                   library_windx="game.libretro.vba-next.dll"
+                   library_wingl="game.libretro.vba-next.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
 		<allowvfs>false</allowvfs>
@@ -24,8 +24,6 @@
 Supported files: .gba
 
 Source: https://github.com/libretro/vba-next</description>
-		<platform>linux</platform>
-		<nofanart>true</nofanart>
-		
+		<platform>all</platform>
 	</extension>
 </addon>
