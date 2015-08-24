@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.vba-next"
-		name="VBA-Next"
+		name="GBA (VBA-Next)"
 		version="1.0.2"
 		provider-name="Libretro">
 	<requires>
