@@ -44,4 +44,4 @@ install(FILES ${PROJECT_SOURCE_DIR}/vba_next_libretro${CMAKE_SHARED_LIBRARY_SUFF
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 
 # write the vba-next-config.cmake script
-file(WRITE ${CMAKE_INSTALL_PREFIX}/vba-next-config.cmake "set(VBA_NEXT_LIB ${CMAKE_INSTALL_PREFIX}/lib/vba_next_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})")
+file(WRITE ${CMAKE_INSTALL_PREFIX}/libretro-vba-next-config.cmake "set(VBA_NEXT_LIB ${CMAKE_INSTALL_PREFIX}/lib/vba_next_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})")

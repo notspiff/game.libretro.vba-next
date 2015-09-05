@@ -7,7 +7,7 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 enable_language(CXX)
 
 find_package(kodi REQUIRED)
-find_package(vba-next REQUIRED)
+find_package(libretro-vba-next REQUIRED)
 
 set(DEPLIBS vba-next)
 set(VBA_NEXT_CUSTOM_BINARY ${VBA_NEXT_LIB}
