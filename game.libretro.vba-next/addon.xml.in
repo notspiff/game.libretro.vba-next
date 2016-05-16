@@ -8,11 +8,7 @@
 		<import addon="game.controller.gba" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_android="libgame.libretro.vba-next.so"
-                   library_linux="game.libretro.vba-next.so"
-                   library_osx="game.libretro.vba-next.dylib"
-                   library_windx="game.libretro.vba-next.dll"
-                   library_wingl="game.libretro.vba-next.dll">
+                   library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
         <supports_vfs>true</supports_vfs>
@@ -26,7 +22,7 @@
 
 Supported files: .gba</description>
 		<license>GPL v2.0</license>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>
