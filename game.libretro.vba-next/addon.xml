@@ -15,16 +15,17 @@
                    library_wingl="game.libretro.vba-next.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
-		<allowvfs>false</allowvfs>
-		<blockextract>false</blockextract>
+        <supports_vfs>true</supports_vfs>
+        <supports_game_loop>true</supports_game_loop>
+        <supports_standalone>false</supports_standalone>
+        <supports_keyboard>false</supports_keyboard>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">VBA-Next v1.0.2</summary>
 		<description>VBA-Next is a fork from the now inactive VisualBoy Advance project, with goals to improve the compatibility and features of the emulator.
 
-Supported files: .gba
-
-License: GPLv2</description>
+Supported files: .gba</description>
+		<license>GPL v2.0</license>
 		<platform>all</platform>
 		<nofanart>true</nofanart>
 	</extension>
