@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.vba-next"
-		name="GBA (VBA-Next)"
+		name="Game Boy Advance (VBA Next)"
 		version="1.0.2"
 		provider-name="Libretro">
 	<requires>
@@ -8,21 +8,23 @@
 		<import addon="game.controller.gba" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_@PLATFORM@="@LIBRARY_FILENAME@">
+			library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
-        <supports_vfs>true</supports_vfs>
-        <supports_game_loop>true</supports_game_loop>
-        <supports_standalone>false</supports_standalone>
-        <supports_keyboard>false</supports_keyboard>
+		<supports_vfs>true</supports_vfs>
+		<supports_standalone>false</supports_standalone>
+		<supports_keyboard>false</supports_keyboard>
+		<supports_mouse>false</supports_mouse>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">VBA-Next v1.0.2</summary>
+		<summary lang="en">Game Boy Advance (VBA Next) v1.0.2</summary>
 		<description>VBA-Next is a fork from the now inactive VisualBoy Advance project, with goals to improve the compatibility and features of the emulator.
 
 Supported files: .gba</description>
-		<license>GPL v2.0</license>
+		<license>GPLv2</license>
 		<platform>@PLATFORM@</platform>
-		<nofanart>true</nofanart>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
